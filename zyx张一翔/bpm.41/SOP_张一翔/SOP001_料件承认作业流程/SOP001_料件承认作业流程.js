@@ -16,6 +16,7 @@ return true;
 
 
 
+
 function cblcxgbmhq_onclick(){
   var tCheckbox=document.getElementsByName("cblcxgbmhq");   
   var tSelectedValue="";   
@@ -23,37 +24,37 @@ function cblcxgbmhq_onclick(){
    if(tCheckbox[i].checked){ 
   tSelectedValue=tSelectedValue+tCheckbox[i].value+";"; 
    }
-    if(tCheckbox[1].checked){ 
+    if(tCheckbox[0].checked){ 
       document.getElementById("hdnmj").value='100306';  
 	  //tSelectedValue = document.getElementById("hdnmj").value +";";
     }else{
 		 document.getElementById("hdnmj").value = ""; 
 	 }
-	 if(tCheckbox[2].checked){   
+	 if(tCheckbox[1].checked){   
       document.getElementById("hdnyz").value='100301';   
 	  //tSelectedValue = tSelectedValue + document.getElementById("hdnyz").value+";";
     }else{
 		 document.getElementById("hdnyz").value = ""; 
 	 }
-	 if(tCheckbox[3].checked){   
+	 if(tCheckbox[2].checked){   
       document.getElementById("hdnjg").value='100302';
 	 // tSelectedValue = tSelectedValue + document.getElementById("hdnjg").value+";";
     }else{
 		 document.getElementById("hdnjg").value = ""; 
 	 }
-	 if(tCheckbox[4].checked){   
+	 if(tCheckbox[3].checked){   
       document.getElementById("hdnsg").value='100305';   
 	  // tSelectedValue = tSelectedValue + document.getElementById("hdnsg").value+";";
     }else{
 		 document.getElementById("hdnsg").value = ""; 
 	 }
-	 if(tCheckbox[5].checked){   
+	 if(tCheckbox[4].checked){   
       document.getElementById("hdnpg").value='1008';  
 	 // tSelectedValue = tSelectedValue + document.getElementById("hdnpg").value+";";
     }else{
 		 document.getElementById("hdnpg").value = ""; 
 	 }
-	 if(tCheckbox[6].checked){   
+	 if(tCheckbox[5].checked){   
       document.getElementById("hdnzc").value='100701';   
 	  //tSelectedValue = tSelectedValue + document.getElementById("hdnzc").value+";";
     }else{
@@ -63,7 +64,58 @@ function cblcxgbmhq_onclick(){
 
 document.getElementById("HiddenTextField0").value = tSelectedValue;
 
-//alert(document.getElementById("HiddenTextField0").value);
+alert(document.getElementById("HiddenTextField0").value);
+}
+
+//新增复选框对应代码
+function Checkbox0_onclick(){
+  var tCheckbox=document.getElementsByName("Checkbox0");   
+  var tSelectedValue="";   
+  for(var i=0;i<tCheckbox.length;i++){  
+   if(tCheckbox[i].checked){ 
+  tSelectedValue=tSelectedValue+tCheckbox[i].value+";"; 
+   }
+    if(tCheckbox[0].checked){ 
+      document.getElementById("hdyw").value='1004';  
+	  //tSelectedValue = document.getElementById("hdnmj").value +";";
+    }else{
+		 document.getElementById("hdyw").value = ""; 
+	 }
+	 if(tCheckbox[1].checked){   
+      document.getElementById("hdsg").value='100305';   
+	  //tSelectedValue = tSelectedValue + document.getElementById("hdnyz").value+";";
+    }else{
+		 document.getElementById("hdsg").value = ""; 
+	 }
+	 if(tCheckbox[2].checked){   
+      document.getElementById("hdyz").value='100301';
+	 // tSelectedValue = tSelectedValue + document.getElementById("hdnjg").value+";";
+    }else{
+		 document.getElementById("hdyz").value = ""; 
+	 }
+	 if(tCheckbox[3].checked){   
+      document.getElementById("hdjg").value='100302';   
+	  // tSelectedValue = tSelectedValue + document.getElementById("hdnsg").value+";";
+    }else{
+		 document.getElementById("hdjg").value = ""; 
+	 }
+	 if(tCheckbox[4].checked){   
+      document.getElementById("hdsy").value='100303';  
+	 // tSelectedValue = tSelectedValue + document.getElementById("hdnpg").value+";";
+    }else{
+		 document.getElementById("hdsy").value = ""; 
+	 }
+	 if(tCheckbox[5].checked){   
+      document.getElementById("hdkq").value='100304';   
+	  //tSelectedValue = tSelectedValue + document.getElementById("hdnzc").value+";";
+    }else{
+		 document.getElementById("hdkq").value = ""; 
+	 }
+  } 
+
+document.getElementById("HiddenTextField1").value = tSelectedValue;
+
+alert(document.getElementById("HiddenTextField1").value);
 }
 
 
